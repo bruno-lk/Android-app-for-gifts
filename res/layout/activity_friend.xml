@@ -13,10 +13,11 @@
         android:layout_height="100dp"
         android:layout_centerHorizontal="true"
         android:src="@drawable/ic_launcher"
-        android:contentDescription="Picture of the contact"	/>
+        android:contentDescription="Picture of the contact"
+        android:onClick="buttonsAddFriend"	/>
 
     <EditText
-        android:id="@+id/nome"
+        android:id="@+id/editName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/imageButton1"
@@ -30,10 +31,10 @@
     </EditText>
 
     <EditText
-        android:id="@+id/data"
+        android:id="@+id/editDate"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/nome"
+        android:layout_below="@+id/editName"
         android:layout_centerHorizontal="true"
         android:ems="10"
         android:hint="Aniversario"
@@ -41,17 +42,18 @@
 
     <TableLayout
         android:id="@+id/TableLayout"
-        android:layout_below="@+id/data"
+        android:layout_below="@+id/editDate"
         android:layout_marginTop="5dp"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_centerHorizontal="true" >
 
         <Button
-            android:id="@+id/add_button"
+            android:id="@+id/add_present_button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/add_new" />
+            android:text="@string/add_new"
+            android:onClick="buttonsAddFriend" />
 
     </TableLayout>
 

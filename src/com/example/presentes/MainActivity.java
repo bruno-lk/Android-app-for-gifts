@@ -13,7 +13,13 @@ public class MainActivity extends ActionBarActivity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_main);
+		
+		boolean flag = true;
+		if (flag == true){
+			setContentView(R.layout.activity_main);
+		}else{
+			setContentView(R.layout.friends_list_activity);
+		}
 	}
 
 	@Override
