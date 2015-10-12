@@ -52,7 +52,7 @@
             android:id="@+id/add_present_button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/add_new"
+            android:text="@string/add_gift"
             android:onClick="buttonsAddFriend" />
 
     </TableLayout>
