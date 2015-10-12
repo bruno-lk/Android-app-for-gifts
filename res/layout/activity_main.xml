@@ -10,17 +10,18 @@
     tools:context=".MainActivity" >
 
     <Button
-        android:id="@+id/button1"
+        android:id="@+id/add_new"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="100dp"
-        android:text="@string/add_new" />
+        android:text="@string/add_new"
+        android:onClick="addFriend" />
 
     <Button
-        android:id="@+id/button2"
-        android:layout_alignBottom="@+id/button1"
+        android:id="@+id/add_from_fb"
+        android:layout_alignBottom="@+id/add_new"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
@@ -28,6 +29,7 @@
         android:layout_marginBottom="100dp"
         android:background="#0000ff"
         android:textColor="#ffffff"
-        android:text="@string/add_from_fb" />
+        android:text="@string/add_from_fb"
+        android:onClick="addFriend" />
 
 </RelativeLayout>
