@@ -14,7 +14,7 @@ public class AddFriendClass extends MainActivity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_friend);
+		setContentView(R.layout.add_friend_activity);
 		
 		editName = (EditText)findViewById(R.id.editName);
 		//editDate = (EditText)findViewById(R.id.editDate);

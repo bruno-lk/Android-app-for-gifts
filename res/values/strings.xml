@@ -5,7 +5,7 @@
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
     <string name="add_friend">Adicionar Amigo</string>
-    <string name="add_new">Adicionar Nova Entrada</string>
+    <string name="add_gift">Adicionar Presente</string>
     <string name="add_from_fb">Adicionar do Facebook</string>
 
 </resources>
