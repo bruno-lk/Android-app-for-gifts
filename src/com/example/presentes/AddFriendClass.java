@@ -1,5 +1,6 @@
 package com.example.presentes;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
@@ -20,16 +21,21 @@ public class AddFriendClass extends MainActivity {
 		//editDate = (EditText)findViewById(R.id.editDate);
 	}
 	
-	public void buttonsAddFriend(View v){
+	public void buttons_AddFriend(View v){
 		switch(v.getId()){
 		case R.id.imageButton1:
 			Toast.makeText(this,"Abrir galeria\nEscolher foto",Toast.LENGTH_SHORT).show();
 			break;
 
-		case R.id.add_present_button:
+		case R.id.add_friend_button:
 			name = editName.getText().toString();
 			Toast.makeText(this, name + " adicionado!",Toast.LENGTH_SHORT).show();
 			break;
+			
+		case R.id.add_gift_button:
+			Intent addGift = new Intent(this, AddGiftClass.class);
+			startActivity(addGift);
+			//Toast.makeText(this, "Chamar add_gift_activity",Toast.LENGTH_SHORT).show();
 		}
 	}
 

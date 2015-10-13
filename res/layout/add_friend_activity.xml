@@ -14,7 +14,7 @@
         android:layout_centerHorizontal="true"
         android:src="@drawable/ic_launcher"
         android:contentDescription="Picture of the contact"
-        android:onClick="buttonsAddFriend"	/>
+        android:onClick="buttons_AddFriend"	/>
 
     <EditText
         android:id="@+id/editName"
@@ -43,18 +43,27 @@
     <TableLayout
         android:id="@+id/TableLayout"
         android:layout_below="@+id/editDate"
+        android:layout_above="@+id/add_friend_button"
         android:layout_marginTop="5dp"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_centerHorizontal="true" >
 
         <Button
-            android:id="@+id/add_present_button"
+            android:id="@+id/add_gift_button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/add_gift"
-            android:onClick="buttonsAddFriend" />
+            android:onClick="buttons_AddFriend"	/>
 
     </TableLayout>
+
+    <Button
+        android:id="@+id/add_friend_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="@string/ok"
+        android:onClick="buttons_AddFriend" />
 
 </RelativeLayout>

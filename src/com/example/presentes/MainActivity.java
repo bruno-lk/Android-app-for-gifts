@@ -46,7 +46,6 @@ public class MainActivity extends ActionBarActivity {
 		case R.id.add_new:
 			Intent addFriend = new Intent(this, AddFriendClass.class);
 			startActivity(addFriend);
-			//Toast.makeText(this,"Chama outra tela",Toast.LENGTH_SHORT).show();
 			break;
 
 		case R.id.add_from_fb:

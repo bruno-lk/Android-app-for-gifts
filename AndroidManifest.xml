@@ -29,6 +29,12 @@
             android:parentActivityName="com.example.presentes.MainActivity"	>   
         </activity>
         
+        <activity
+            android:name="com.example.presentes.AddGiftClass"
+            android:label="@string/add_gift"
+            android:parentActivityName="com.example.presentes.MainActivity"	>
+        </activity>
+        
     </application>
 
 </manifest>
