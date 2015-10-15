@@ -14,5 +14,6 @@ public class AddGiftClass extends MainActivity{
 	
 	public void addGiftButton(View v){
 		Toast.makeText(this, "Presente adicionado!",Toast.LENGTH_SHORT).show();
+		this.finish();
 	}
 }

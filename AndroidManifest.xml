@@ -32,7 +32,7 @@
         <activity
             android:name="com.example.presentes.AddGiftClass"
             android:label="@string/add_gift"
-            android:parentActivityName="com.example.presentes.MainActivity"	>
+            android:parentActivityName="com.example.presentes.AddFriendClass"	>
         </activity>
         
     </application>

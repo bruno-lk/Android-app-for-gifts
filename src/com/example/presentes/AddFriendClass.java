@@ -30,12 +30,12 @@ public class AddFriendClass extends MainActivity {
 		case R.id.add_friend_button:
 			name = editName.getText().toString();
 			Toast.makeText(this, name + " adicionado!",Toast.LENGTH_SHORT).show();
+			this.finish();
 			break;
 			
 		case R.id.add_gift_button:
 			Intent addGift = new Intent(this, AddGiftClass.class);
 			startActivity(addGift);
-			//Toast.makeText(this, "Chamar add_gift_activity",Toast.LENGTH_SHORT).show();
 		}
 	}
 
