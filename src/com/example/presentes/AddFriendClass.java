@@ -1,5 +1,6 @@
 package com.example.presentes;
 
+import Objects.Friend;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -29,6 +30,7 @@ public class AddFriendClass extends MainActivity {
 
 		case R.id.add_friend_button:
 			name = editName.getText().toString();
+			Friend name = new Friend();
 			Toast.makeText(this, name + " adicionado!",Toast.LENGTH_SHORT).show();
 			this.finish();
 			break;
