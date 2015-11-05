@@ -1,6 +1,5 @@
 package com.example.presentes;
 
-import Objects.Friend;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -9,8 +8,8 @@ import android.widget.Toast;
 
 public class AddFriendClass extends MainActivity {
 	
-	EditText editName;//, editDate;
-	String name;
+	EditText editName;//need do add anniversary date;
+	//String name;
 	//Date data;
 	
 	@Override
@@ -29,9 +28,11 @@ public class AddFriendClass extends MainActivity {
 			break;
 
 		case R.id.add_friend_button:
-			name = editName.getText().toString();
-			Friend name = new Friend();
-			Toast.makeText(this, name + " adicionado!",Toast.LENGTH_SHORT).show();
+			Friend newFriend = new Friend();//creat new object
+			newFriend.name = editName.getText().toString();//add name to object newFriend
+			//call function to create new friend
+			System.out.println(newFriend);//test
+			Toast.makeText(this, newFriend.name + " adicionado!",Toast.LENGTH_SHORT).show();
 			this.finish();
 			break;
 			
