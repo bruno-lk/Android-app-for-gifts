@@ -1,9 +1,12 @@
 package com.example.presentes;
 
-//import java.util.Date;
-
 public class Friend {
-	public String name;
-	//public Date anniversary;
+	String name;
+	//Calendar anniversary;
 	//List giftList;
+	
+	Friend(String name){
+		this.name = name;
+		//this.anniversary = anniversary;
+	}
 }

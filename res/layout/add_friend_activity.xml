@@ -38,6 +38,7 @@
         android:layout_centerHorizontal="true"
         android:ems="10"
         android:hint="Aniversario"
+        android:onClick="buttons_AddFriend"
         android:inputType="date" />
 
     <TableLayout

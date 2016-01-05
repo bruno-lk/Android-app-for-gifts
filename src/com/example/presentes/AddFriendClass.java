@@ -1,16 +1,23 @@
 package com.example.presentes;
 
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+
+import android.app.DatePickerDialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.view.View.OnClickListener;
 import android.widget.EditText;
 import android.widget.Toast;
 
-public class AddFriendClass extends MainActivity {
+public class AddFriendClass extends MainActivity{
 	
-	EditText editName;//need do add anniversary date;
-	//String name;
-	//Date data;
+	EditText editName, editDate;
+	String name;
+	Calendar date;
+	DatePickerDialog datePickerDialog;
+	SimpleDateFormat dateFormatter;
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -18,7 +25,14 @@ public class AddFriendClass extends MainActivity {
 		setContentView(R.layout.add_friend_activity);
 		
 		editName = (EditText)findViewById(R.id.editName);
-		//editDate = (EditText)findViewById(R.id.editDate);
+		editDate = (EditText)findViewById(R.id.editDate);
+		
+		dateFormatter = new SimpleDateFormat("dd-MM-yyyy");
+	}
+	
+	void setDateTimeField(){
+		
+		date = Calendar.getInstance();
 	}
 	
 	public void buttons_AddFriend(View v){
@@ -28,17 +42,23 @@ public class AddFriendClass extends MainActivity {
 			break;
 
 		case R.id.add_friend_button:
-			Friend newFriend = new Friend();//creat new object
-			newFriend.name = editName.getText().toString();//add name to object newFriend
-			//call function to create new friend
-			System.out.println(newFriend);//test
+			name = editName.getText().toString();
+			//date = 
+			Friend newFriend = new Friend(name);//create new object and add name to object newFriend
+			//call function to create new friend on BD
+			
 			Toast.makeText(this, newFriend.name + " adicionado!",Toast.LENGTH_SHORT).show();
-			this.finish();
+			this.finish();//finish the intent
 			break;
 			
 		case R.id.add_gift_button:
 			Intent addGift = new Intent(this, AddGiftClass.class);
 			startActivity(addGift);
+			break;
+			
+		case R.id.editDate:
+			setDateTimeField();
+			break;
 		}
 	}
 
